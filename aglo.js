@@ -89,11 +89,30 @@ Storm.prototype.predictRun = function(){
             // If location a is next in directional path - its  prediction will be set
             location_A.prediction = 85;
             // Set next locations logic based on new set logic
-            location_A.
+            location_A.isNext = true;
+
+            location_A.stormBy = location_Z.stormBy
+
+            //NOW SET ALL PREDICTIONS BASED ON MOVEMENT 
+
+            if (location_A.prediction > 50 && directionalClock === directionalClock){
+                location_B.prediction = location_A.prediction - 10;
+                location_C.prediction = location_B.prediction - 10;
+                location_F.prediction = location_C.prediction - 10;
+            }
         }
     }
 }
 
+Rage.predictRun();
+console.log(location_Z);
+console.log(location_A);
+console.log(location_B);
+console.log(location_C);
+console.log(location_F);
 
-console.log(location_Z.map)
+
+
+
+
 
